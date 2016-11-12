@@ -57,16 +57,14 @@ cacheSolve <- function(mCM = makeCacheMatrix(), ...)
     return(i)
   } 
   else { 
-    print("here2")
     i <- solve(m) 
     mCM$setinv(i)
     mCM$setprevmat(m)
-    print("Calculated inverse of the newMatrix:")
+    print("Calculated inverse of the new Matrix:")
     return(i)
   }
   
 }
-
 
 
 
